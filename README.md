@@ -1,1 +1,1 @@
-# aiogram-bot-template
+# LearningCenter telegram bot using aiogram with template
