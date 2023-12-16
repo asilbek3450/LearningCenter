@@ -1,6 +1,6 @@
 from aiogram import types
 
-from keyboards.default.start import manzil
+from keyboards.default.start import manzil, start_keyboards
 from loader import dp
 from utils.get_location import choose_nearest_location
 
@@ -8,6 +8,11 @@ from utils.get_location import choose_nearest_location
 @dp.message_handler(text='📌 Manzillarimiz')
 async def manzil_keyboard(message: types.Message):
     await message.reply("Joylashgan manzilingizni jo'nating", reply_markup=manzil)
+
+
+@dp.message_handler(text='⬅️ Orqaga')
+async def orqaga_keyboard(message: types.Message):
+    await message.reply("Bosh sahifaga qaytdik", reply_markup=start_keyboards)
 
 
 @dp.message_handler(content_types=types.ContentTypes.LOCATION)

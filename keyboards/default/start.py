@@ -11,5 +11,6 @@ contact = ReplyKeyboardMarkup(resize_keyboard=True, keyboard=[
 ])
 
 manzil = ReplyKeyboardMarkup(resize_keyboard=True, keyboard=[
-    [KeyboardButton('📌 Manzil jo\'natish', request_location=True)]
+    [KeyboardButton('📌 Manzil jo\'natish', request_location=True)],
+    [KeyboardButton('⬅️ Orqaga')]
 ])
