@@ -7,7 +7,5 @@ services:
       dockerfile: Dockerfile
     restart: unless-stopped
     container_name: ${BOT_NAME}
-    environment:
-      - BOT_NAME=learningcentermars_bot
-      - BOT_TOKEN=6373559921:AAF0PyaVv3qw1w1GaVGCUs-u6Q9mPc98U6U
+#    env_file:
 #      - .env
