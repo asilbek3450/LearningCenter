@@ -23,4 +23,4 @@ RUN pip install --no-cache /wheels/*
 
 COPY . .
 
-CMD ["python", "-u", "app.py"]
+CMD ["python", "app.py"]
