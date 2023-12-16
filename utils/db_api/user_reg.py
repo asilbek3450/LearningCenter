@@ -9,7 +9,7 @@ def create_users_table():
     # cursor = conn.cursor()
     conn = psycopg2.connect(
         database="defaultdb",
-        username="doadmin",
+        user="doadmin",
         password="AVNS_KF6MzrKaolPLpVI9MB0",
         host="dbaas-db-7166939-do-user-13959110-0.c.db.ondigitalocean.com",
         port="25060",
@@ -37,7 +37,7 @@ async def add_users_to_db(informations: dict):
     # cursor = conn.cursor()
     conn = psycopg2.connect(
         database="defaultdb",
-        username="doadmin",
+        user="doadmin",
         password="AVNS_KF6MzrKaolPLpVI9MB0",
         host="dbaas-db-7166939-do-user-13959110-0.c.db.ondigitalocean.com",
         port="25060",
@@ -57,7 +57,7 @@ async def get_users_from_db():
     # cursor = conn.cursor()
     conn = psycopg2.connect(
         database="defaultdb",
-        username="doadmin",
+        user="doadmin",
         password="AVNS_KF6MzrKaolPLpVI9MB0",
         host="dbaas-db-7166939-do-user-13959110-0.c.db.ondigitalocean.com",
         port="25060",
