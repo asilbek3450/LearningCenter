@@ -85,6 +85,6 @@ async def get_contact(message: types.Message, state: FSMContext):
                          f'Ma\'lumotlar:\nIsm: {data.get("name")}\nTelefon raqam: {data.get("phone")}\nKurs: {data.get("course")}',
                          reply_markup=types.ReplyKeyboardRemove())
     await state.finish()
-
+    create_users_table()
     await add_users_to_db(user_informations)
     print(user_informations)
