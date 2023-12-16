@@ -82,7 +82,7 @@ async def get_contact(message: types.Message, state: FSMContext):
     user_informations.update(data)  # user_informations ga o'zlashtiradi
     user_informations.update({'user_id': message.from_user.id})  # user_id ni ham ovolamiz
     await message.answer(f'Siz ro\'yxatdan o\'tdingiz!\nTez orada siz bilan bog\'lanamiz...\n\n'
-                         f'Ma\'lumotlar:\nIsm: {data.get("name")}\nTelefon raqam: {data.get("phone")}',
+                         f'Ma\'lumotlar:\nIsm: {data.get("name")}\nTelefon raqam: {data.get("phone")}\nKurs: {data.get("course")}',
                          reply_markup=types.ReplyKeyboardRemove())
     await state.finish()
 
